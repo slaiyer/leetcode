@@ -11,8 +11,4 @@ class Solution:
             occurences[s[idx]] += 1
             occurences[t[idx]] -= 1
 
-        for v in occurences.values():
-            if v != 0:
-                return False
-
-        return True
+        return not any(v != 0 for v in occurences.values())
