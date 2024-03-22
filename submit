@@ -1,11 +1,22 @@
 #!/usr/bin/env bash
 
 if [[ "${#}" -lt 1 ]]; then
-  >&2 echo 'solution name not supplied'
+  >&2 echo 'solution string not supplied'
   exit 1
 fi
 
-SOL_NAME="${1}"
-SOL_STR="${1// /-}"
+SOL_STR="${1}"
 
-echo $SOL_STR
+mkdir "${SOL_STR}"
+
+cat <<EOF >"${SOL_STR}/README.md"
+https://leetcode.com/problems/$SOL_STR/
+EOF
+
+vi "${SOL_STR}/${SOL_STR}.py"
+
+git add "${SOL_STR}/"
+git commit
+
+git pull --rebase
+git push
