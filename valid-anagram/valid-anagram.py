@@ -7,11 +7,9 @@ class Solution:
 
         occurences: dict[str, int] = defaultdict(int)
         
-        for c in s:
-            occurences[c] += 1
-
-        for c in t:
-            occurences[c] -= 1
+        for idx in range(len(s)):
+            occurences[s[idx]] += 1
+            occurences[t[idx]] -= 1
 
         for v in occurences.values():
             if v != 0:
