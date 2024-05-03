@@ -8,7 +8,6 @@ if [[ "${#}" -lt 1 || -z "${1}" ]]; then
 fi
 
 PROB_ID="${1}"
-
 mkdir "${PROB_ID}"
 
 >"${PROB_ID}/README.md" cat <<EOF
@@ -16,7 +15,6 @@ mkdir "${PROB_ID}"
 EOF
 
 read -r -n1 -s -p 'Copy solution to clipboard, then press any key here...'
-
 >"${PROB_ID}/${PROB_ID}.py" pbpaste
 
 git add "${PROB_ID}/"
