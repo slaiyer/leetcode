@@ -1,8 +1,9 @@
 from collections import defaultdict
 import heapq
 
+
 class Solution:
-    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+    def topKFrequent(self, nums: list[int], k: int) -> list[int]:
         freq_map: dict[int, int] = defaultdict(int)
 
         for i in nums:

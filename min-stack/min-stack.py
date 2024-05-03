@@ -1,6 +1,5 @@
 class MinStack:
-
-    def __init__(self):
+    def __init__(self) -> None:
         self.stack: list[int] = []
         self.stack_min: list[int] = []
 

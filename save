@@ -10,7 +10,7 @@ SOL_STR="${1}"
 mkdir "${SOL_STR}"
 
 cat <<EOF >"${SOL_STR}/README.md"
-https://leetcode.com/problems/$SOL_STR/
+# [$SOL_STR](https://leetcode.com/problems/$SOL_STR/)
 EOF
 
 vi "${SOL_STR}/${SOL_STR}.py"

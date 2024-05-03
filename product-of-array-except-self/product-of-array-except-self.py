@@ -1,5 +1,5 @@
 class Solution:
-    def productExceptSelf(self, nums: List[int]) -> List[int]:
+    def productExceptSelf(self, nums: list[int]) -> list[int]:
         res = [1] * (len(nums))
 
         # forward accumulative product through index i - 1
@@ -11,5 +11,5 @@ class Solution:
         for i in range(len(nums) - 1, -1, -1):
             res[i] *= postfix
             postfix *= nums[i]
-        
+
         return res

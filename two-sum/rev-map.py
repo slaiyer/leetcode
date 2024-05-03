@@ -1,5 +1,5 @@
 class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
+    def twoSum(self, nums: list[int], target: int) -> list[int]:
         rev_map: dict[int, int] = {}  # val -> idx
 
         for idx, n in enumerate(nums):
@@ -9,3 +9,5 @@ class Solution:
                 return [rev_map[diff], idx]
 
             rev_map[n] = idx
+
+        return [-1, -1]

@@ -1,5 +1,5 @@
 class Solution:
-    def containsDuplicate(self, nums: List[int]) -> bool:
+    def containsDuplicate(self, nums: list[int]) -> bool:
         checkboxes: set[int] = set()
         for num in nums:
             if num in checkboxes:

@@ -1,5 +1,5 @@
 class Solution:
-    def threeSum(self, nums: List[int]) -> List[List[int]]:
+    def threeSum(self, nums: list[int]) -> list[list[int]]:
         nums.sort()
         res = []
 
@@ -30,5 +30,5 @@ class Solution:
 
                     while nums[r] == nums[r + 1] and l < r:
                         r -= 1
-                        
+
         return res
