@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-if [[ "${#}" -lt 1 ]]; then
+set -eEuo pipefail
+
+if [[ "${#}" -lt 1 || -z "${1}" ]]; then
 	>&2 echo 'problem ID string not supplied'
 	exit 1
 fi
@@ -9,7 +11,7 @@ PROB_ID="${1}"
 
 mkdir "${PROB_ID}"
 
-cat <<EOF >"${PROB_ID}/README.md"
+>"${PROB_ID}/README.md" cat <<EOF
 # [$PROB_ID](https://leetcode.com/problems/$PROB_ID/)
 EOF
 
