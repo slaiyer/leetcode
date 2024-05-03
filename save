@@ -3,7 +3,7 @@
 set -eEuo pipefail
 
 if [[ "${#}" -lt 1 || -z "${1}" ]]; then
-	>&2 echo 'problem ID string not supplied'
+	>&2 echo 'FATAL: problem ID string not supplied'
 	exit 1
 fi
 
@@ -15,7 +15,9 @@ mkdir "${PROB_ID}"
 # [$PROB_ID](https://leetcode.com/problems/$PROB_ID/)
 EOF
 
-vi "${PROB_ID}/${PROB_ID}.py"
+read -r -n1 -s -p 'Copy solution to clipboard, then press any key here...'
+
+>"${PROB_ID}/${PROB_ID}.py" pbpaste
 
 git add "${PROB_ID}/"
 git commit
