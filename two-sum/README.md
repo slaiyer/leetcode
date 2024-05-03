@@ -1,1 +1,1 @@
-# [Two sum](https://leetcode.com/problems/two-sum/)
+# [two-sum](https://leetcode.com/problems/two-sum/)

@@ -1,1 +1,1 @@
-# [Longest consecutive sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
+# [longest-consecutive-sequence](https://leetcode.com/problems/longest-consecutive-sequence/)

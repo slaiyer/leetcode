@@ -1,1 +1,1 @@
-# [Min stack](https://leetcode.com/problems/min-stack/)
+# [min-stack](https://leetcode.com/problems/min-stack/)

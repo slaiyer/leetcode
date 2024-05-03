@@ -1,1 +1,1 @@
-# [Contains duplicate](https://leetcode.com/problems/contains-duplicate/)
+# [contains-duplicate](https://leetcode.com/problems/contains-duplicate/)

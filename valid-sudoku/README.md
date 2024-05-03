@@ -1,1 +1,1 @@
-# [Valid sudoku](https://leetcode.com/problems/valid-sudoku/)
+# [valid-sudoku](https://leetcode.com/problems/valid-sudoku/)

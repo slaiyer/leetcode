@@ -1,1 +1,1 @@
-# [Binary search](https://leetcode.com/problems/binary-search/)
+# [binary-search](https://leetcode.com/problems/binary-search/)

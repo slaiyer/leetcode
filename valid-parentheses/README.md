@@ -1,1 +1,1 @@
-# [Valid parentheses](https://leetcode.com/problems/valid-parentheses/)
+# [valid-parentheses](https://leetcode.com/problems/valid-parentheses/)
