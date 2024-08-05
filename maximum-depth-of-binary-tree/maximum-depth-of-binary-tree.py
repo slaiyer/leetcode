@@ -6,7 +6,10 @@ from typing import Self
 
 class TreeNode:
     def __init__(
-        self, val: int = 0, left: Self | None = None, right: Self | None = None
+        self,
+        val: int = 0,
+        left: Self | None = None,
+        right: Self | None = None,
     ):
         self.val = val
         self.left: TreeNode | None = left
