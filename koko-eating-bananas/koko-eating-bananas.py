@@ -1,8 +1,11 @@
+import math
+
+
 class Solution:
-    def minEatingSpeed(self, piles: List[int], h: int) -> int:
+    def minEatingSpeed(self, piles: list[int], h: int) -> int:
         left, right = 1, max(piles)
         res = right
-        
+
         while left <= right:
             mid = left + (right - left) // 2
 
