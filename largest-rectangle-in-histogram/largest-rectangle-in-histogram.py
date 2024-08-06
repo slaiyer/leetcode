@@ -1,5 +1,5 @@
 class Solution:
-    def largestRectangleArea(self, heights: List[int]) -> int:
+    def largestRectangleArea(self, heights: list[int]) -> int:
         max_area = 0
         st: list[tuple[int, int]] = []  # (index, height)
 
