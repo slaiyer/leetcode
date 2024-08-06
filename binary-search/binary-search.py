@@ -1,14 +1,14 @@
 class Solution:
     def search(self, nums: list[int], target: int) -> int:
-        l, r = 0, len(nums) - 1
+        left, right = 0, len(nums) - 1
 
-        while l <= r:
-            mid = l + ((r - l) // 2)  # (l + r) // 2 can lead to overflow
+        while left <= right:
+            mid = left + ((right - left) // 2)  # (l + r) // 2 can lead to overflow
 
             if (check := nums[mid]) < target:
-                l = mid + 1
+                left = mid + 1
             elif check > target:
-                r = mid - 1
+                right = mid - 1
             else:
                 return mid
 
