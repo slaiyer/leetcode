@@ -1,8 +1,9 @@
 from collections import defaultdict
 
+
 class Solution:
-    def kthDistinct(self, arr: List[str], k: int) -> str:
-        d = defaultdict(int)
+    def kthDistinct(self, arr: list[str], k: int) -> str:
+        d: dict[str, int] = defaultdict(int)
         for s in arr:
             d[s] += 1
 
