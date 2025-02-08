@@ -1,7 +1,7 @@
 class Solution:
     def threeSum(self, nums: list[int]) -> list[list[int]]:
         nums.sort()
-        res = []
+        res: list[list[int]] = []
 
         for idx, neg in enumerate(nums):
             # skip positive integers
