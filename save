@@ -16,9 +16,3 @@ EOF
 
 read -r -n1 -s -p 'Copy solution to clipboard, then press any key here...'
 pbpaste >"${PROB_ID}/${PROB_ID}.py"
-
-git add "${PROB_ID}/"
-git commit -m "add ${PROB_ID} py"
-
-git pull --rebase
-git push
